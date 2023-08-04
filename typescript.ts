@@ -29,16 +29,32 @@ thisIsAnything = false
 
 // any is a great source of errors, so lets try to avoid this 
 
-let turn, winner, tie, board
+// let turn, winner, tie, board
 
 // other way to do board is board: Array<number> but its not the best way for this situation
 
-function init() {
-  turn = 1
-  winner = false 
-  tie = false
-  board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-  console.log(turn)
+// function init() {
+//   turn = 1
+//   winner = false 
+//   tie = false
+//   board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+//   console.log(turn)
+// }
+
+// init()
+
+function addTwoNumber(numA: number, numB: number) {
+  return numA + numB
 }
 
-init()
+//notice how the number is specified as what the function returns. Handy init?
+
+console.log(addTwoNumber(3, 4))
+
+// you should always avoid "type any"
+
+function sayHi(name: string) {
+  console.log(`Hey ${name || 'stranger, whats your name?'}`)
+}
+
+sayHi()
