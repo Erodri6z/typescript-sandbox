@@ -58,3 +58,53 @@ thisIsAnything = false
 // }
 
 // sayHi()
+
+// function divideByTwo(num: number): string {
+//   return `${num} divided by two is ${num / 2}.`
+// }
+
+// const answer: string = divideByTwo(14)
+
+// console.log(answer)
+
+
+
+let firstMeal: object
+
+firstMeal = {dish: 'waffle', dessert: 'alot of syrup'}
+
+
+// must define when getting the shape of it
+let secondMeal: { dish: string; dessert: string; }
+
+// notice how its an error if youre missing something? Also tells you what you are missing
+secondMeal = { dish : 'Hot Pocket', dessert: 'Cheesecake'}
+
+
+const thirdMeal: {
+  readonly dish: string;
+  dessert: string;
+} = {
+  dish: 'Chicken Nuggies',
+  dessert: 'tres leches'
+}
+
+//readonly prevents it from being changed in runtime. However this must be done in this way
+
+const fourthMeal: {
+  dish: string;
+  dessert: string;
+  drink?: string;
+} = {
+  dish: 'tacos',
+  dessert: 'candy'
+}
+
+console.log(fourthMeal.drink)
+
+fourthMeal.drink = 'soda'
+
+console.log(fourthMeal.drink)
+
+
+// adding a ? to the end of of a declaration basically turns it optional, so either undefined or whatever its defining it

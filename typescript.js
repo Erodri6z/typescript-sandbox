@@ -24,13 +24,36 @@ thisIsAnything = false;
 //   console.log(turn)
 // }
 // init()
-function addTwoNumber(numA, numB) {
-    return numA + numB;
-}
+// function addTwoNumber(numA: number, numB: number) {
+//   return numA + numB
+// }
 //notice how the number is specified as what the function returns. Handy init?
-console.log(addTwoNumber(3, 4));
+// console.log(addTwoNumber(3, 4))
 // you should always avoid "type any"
-function sayHi(name) {
-    console.log("Hey ".concat(name || 'stranger, whats your name?'));
-}
-sayHi();
+// function sayHi(name: string) {
+//   console.log(`Hey ${name || 'stranger, whats your name?'}`)
+// }
+// sayHi()
+// function divideByTwo(num: number): string {
+//   return `${num} divided by two is ${num / 2}.`
+// }
+// const answer: string = divideByTwo(14)
+// console.log(answer)
+var firstMeal;
+firstMeal = { dish: 'waffle', dessert: 'alot of syrup' };
+// must define when getting the shape of it
+var secondMeal;
+// notice how its an error if youre missing something? Also tells you what you are missing
+secondMeal = { dish: 'Hot Pocket', dessert: 'Cheesecake' };
+var thirdMeal = {
+    dish: 'Chicken Nuggies',
+    dessert: 'tres leches'
+};
+//readonly prevents it from being changed in runtime. However this must be done in this way
+var fourthMeal = {
+    dish: 'tacos',
+    dessert: 'candy'
+};
+console.log(fourthMeal.drink);
+fourthMeal.drink = 'soda';
+console.log(fourthMeal.drink);
