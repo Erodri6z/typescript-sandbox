@@ -43,18 +43,18 @@ thisIsAnything = false
 
 // init()
 
-function addTwoNumber(numA: number, numB: number) {
-  return numA + numB
-}
+// function addTwoNumber(numA: number, numB: number) {
+//   return numA + numB
+// }
 
 //notice how the number is specified as what the function returns. Handy init?
 
-console.log(addTwoNumber(3, 4))
+// console.log(addTwoNumber(3, 4))
 
 // you should always avoid "type any"
 
-function sayHi(name: string) {
-  console.log(`Hey ${name || 'stranger, whats your name?'}`)
-}
+// function sayHi(name: string) {
+//   console.log(`Hey ${name || 'stranger, whats your name?'}`)
+// }
 
-sayHi()
+// sayHi()
